@@ -16,7 +16,9 @@ import software.amazon.awssdk.services.s3.model.PutObjectRequest;
 import software.amazon.awssdk.services.s3.model.PutObjectResponse;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 @Service
 public class FoodServiceImpl implements FoodService{
@@ -62,6 +64,18 @@ public class FoodServiceImpl implements FoodService{
         newFoodEntity.setImageUrl(imageUrl);
         newFoodEntity = foodRepository.save(newFoodEntity);
         return convertToResponse(newFoodEntity);
+    }
+
+    @Override
+    public List<FoodResponse> readFoods() {
+        List<FoodEntity> databaseEntries = foodRepository.findAll();
+        return databaseEntries.stream().map(object -> convertToResponse(object)).collect(Collectors.toList());
+    }
+
+    @Override
+    public FoodResponse readFood(String id) {
+        FoodEntity existingFood = foodRepository.findById(id).orElseThrow(() -> new RuntimeException("Food not found for the id: " + id));
+        return convertToResponse(existingFood);
     }
 
     private FoodEntity convertToEntity(FoodRequest request){
