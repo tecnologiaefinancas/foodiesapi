@@ -19,7 +19,7 @@ public class OrderEntity {
     private String phoneNumber;
     private String email;
     private List<OrderItem> orderedItems;
-    private double amount;
+    private Long amount;
     private String paymentStatus;
     private String stripeOrderId;
     private String stripeSignature;
