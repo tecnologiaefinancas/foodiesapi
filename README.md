@@ -48,9 +48,11 @@ To set up this project, ensure you have the following installed:
 - **Spring Boot**
     - Spring Data MongoDB
     - Spring Web
+    - Spring Cloud Eureka Client
 - **Amazon S3 (AWS SDK v2)**
 - **MongoDB**
+- **Prometheus** (see other branches)
 
 ## Acknowledgment
-Special thanks to **Bushan** for the valuable lessons.
+Special thanks to **Bushan** for the valuable lessons for starting this project before improvements.
 
