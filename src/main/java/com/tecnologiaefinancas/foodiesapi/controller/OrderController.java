@@ -40,11 +40,13 @@ public class OrderController {
         orderService.removeOrder(orderId);
     }
 
+    //Admin panel
     @GetMapping("/all")
     public List<OrderResponse> getOrdersOfAllUsers() {
         return orderService.getOrdersOfAllUsers();
     }
 
+    //Admin panel
     @PatchMapping("/status/{orderId}")
     public void updateOrderStatus(@PathVariable String orderId, @RequestParam String status){
         orderService.updateOrderStatus(orderId, status);
