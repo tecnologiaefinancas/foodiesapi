@@ -2,6 +2,7 @@ package com.tecnologiaefinancas.foodiesapi.io;
 
 import lombok.Builder;
 import lombok.Data;
+import java.util.List;
 
 @Data
 @Builder
@@ -15,4 +16,5 @@ public class OrderResponse {
     private String paymentStatus;
     private String stripeOrderId;
     private String orderStatus;
+    private List<OrderItem> orderedItems;
 }

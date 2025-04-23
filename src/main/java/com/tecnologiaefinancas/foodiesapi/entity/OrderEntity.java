@@ -23,5 +23,6 @@ public class OrderEntity {
     private String paymentStatus;
     private String stripeOrderId;
     private String stripeSignature;
+    private String stripePaymentId;
     private String orderStatus;
 }
