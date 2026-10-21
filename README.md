@@ -12,6 +12,8 @@
 >
 > **Why it's public:** this repository is kept public solely to document my professional evolution over the years, for clients and interviewers. It is a reference implementation of a food-delivery backend: menu management with image storage on S3, JWT auth, cart, orders and Stripe payments.
 >
+> **Project status:** complete. It is the backend that complements [foodies](https://github.com/tecnologiaefinancas/foodies) and [foodies-adminpanel](https://github.com/tecnologiaefinancas/foodies-adminpanel), built purely for practice and learning.
+>
 > <sub>Levels: **Entry** = following references · **Junior** = implemented on my own and working · **Mid** = independent, with tests and trade-offs.</sub>
 
 # Restaurant Admin Panel (Backend Only)
