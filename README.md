@@ -1,3 +1,13 @@
+> **Portfolio note** · Built Mar–Dec 2025 · Self-assessed in Oct 2026
+>
+> **Spring stack:** Spring Boot 3.4 · Spring Security (stateless JWT filter, BCrypt, CORS config) · Spring Data MongoDB · Spring Validation · Spring Cloud Netflix Eureka Client · Spring Boot Actuator + Micrometer/Prometheus (branch `with_prometheus`) · AWS SDK v2 (S3) · Stripe Java · JJWT · Lombok
+>
+> **Level at the time, by topic:** REST API design (backend of a food-delivery product serving the customer site and the admin panel: menu with images on S3, register/login, cart, orders with Stripe payments, admin order management): Mid · Spring Security: Junior · Third-party integrations (S3, Stripe): Junior · Service discovery & observability: Junior · Automated testing: Mid _(not explored in this project, as the focus was learning the other topics above)_
+>
+> **Why it's public:** this repository is kept public solely to document my professional evolution over the years, for clients and interviewers. It is a reference implementation of a food-delivery backend: menu management with image storage on S3, JWT auth, cart, orders and Stripe payments.
+>
+> <sub>Levels: **Entry** = following references · **Junior** = implemented on my own and working · **Mid** = independent, with tests and trade-offs.</sub>
+
 # Restaurant Admin Panel (Backend Only)
 
 <a href="https://www.linkedin.com/in/natalia-feitosa-tf" target="_blank" style="text-decoration:none">
